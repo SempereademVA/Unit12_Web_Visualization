@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles01.css">
+
+        <title>Comparison</title>
+        <style>   h3 {color:blue;} </style>
+
+	</head>
+
+	<body>
+        <!Navigation Bar -->
+		<nav class="navbar navbar-default">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+                        <!Add a Collapsing Navigation Bar when viewed from small screens. -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                        </button> 
+      				<a class="navbar-brand" href="index.html">Marc's Latitude</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+     			<div>
+      				<ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="experimental_maxtemp.html">Max Temperature</a></li>
+                                    <li><a href="experimental_humidity.html">Humidity</a></li>
+                                    <li><a href="experimental_cloudiness.html">Cloudiness</a></li>
+                                    <li><a href="experimental_winds.html">Wind Speed</a></li>
+                                </ul>
+                        </li>
+        				<li class="active"><a href="#">Comparison</a></li>
+        				<li><a href="data_experimental.html">Data</a></li>
+                    </ul>
+                </div>
+    		    </div>
+  		    </div>
+	    </nav>
+	
+		
+        <div class="container">
+        <div class="jumbotron">		
+                <h2>Comparison: Latitude vs X</h2>
+        <p>Click any plot to get an analysis:</p>
+        
+        <div class="row">
+          <div class="column2" align="center">
+              <h3>vs. Max Temperature</h3>
+              <a href="experimental_maxtemp.html"><img src="Plots/temp_lat.png" alt="Temperature" style="width:50%"/></a>
+          </div>
+          <div class="column2" align="center">
+                <h3>vs. Humidity</h3>
+                <a href="experimental_humidity.html"> <img src="Plots/humid_lat.png" alt="Humidity" style="width:50%"/></a>
+          </div>
+          <div class="row">
+                <div class="column2" align="center">
+                    <h3>vs. Cloudiness</h3>
+                    <a href="experimental_cloudiness.html"><img src="Plots/cloud_lat.png" alt="Cloudiness" style="width:50%"/></a>
+                </div>
+                <div class="column2" align="center">
+                      <h3>vs. Wind Speed</h3>
+                      <a href="experimental_winds.html"><img src="Plots/winds_lat.png" alt="Winds" style="width:50%"/></a>
+                </div>
+                </div>
+            </div>
+        
+		
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+	</body>
+</html>

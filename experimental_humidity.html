@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+		<title>Humidity</title>
+
+	</head>
+
+	<body>
+        <!Navigation Bar -->
+		<nav class="navbar navbar-default">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+                        <!Add a Collapsing Navigation Bar when viewed from small screens. -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                        </button> 
+      				<a class="navbar-brand" href="index.html">Marc's Latitude</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+     			<div>
+      				<ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="experimental_maxtemp.html">Max Temperature</a></li>
+                                    <li><a href="#">Humidity</a></li>
+                                    <li><a href="experimental_cloudiness.html">Cloudiness</a></li>
+                                    <li><a href="experimental_winds.html">Wind Speed</a></li>
+                                </ul>
+                        </li>
+        				<li><a href="comparison.html">Comparison</a></li>
+        				<li><a href="data_experimental.html">Data</a></li>
+                    </ul>
+                </div>
+    		    </div>
+  		    </div>
+	    </nav>
+	
+		<div class="container">
+			<div class="jumbotron">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!--Put the Page Header Here-->
+						<h2>Humidity</h2>
+						<p></p>
+                        <!--Put the Image Here-->
+						<img class="img-responsive" src = "Plots/humid_lat.png"
+						<!--Enter Text Here to describe the information on the page-->
+						<p></p>
+                        <p>Analysis of the plots shows a concentration of high humidity at the equatorial regions.</p>
+				        <p>Tropical climates occur in the equatorial regions.   Tropical rain forests contribute to the humidity.  As the rain is absorbed by the plants and trees in the forest, their leaves release moisture causing the humidity to increase.</p>
+                    </div>
+                    
+                </div>
+ 			</div>
+		</div>
+
+		
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+	</body>
+</html>
+
+</html>

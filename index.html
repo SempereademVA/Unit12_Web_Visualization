@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles01.css">
+
+        <title>Latitide Vs X</title>
+        <style>   h3 {color:blue;} </style>
+
+	</head>
+
+	       
+	<body>
+            <!Navigation Bar -->
+            <nav class="navbar navbar-default">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                            <!Add a Collapsing Navigation Bar when viewed from small screens. -->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                            </button> 
+                          <a class="navbar-brand" href="#">Marc's Latitude</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                     <div>
+                          <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="experimental_maxtemp.html">Max Temperature</a></li>
+                                        <li><a href="experimental_humidity.html">Humidity</a></li>
+                                        <li><a href="experimental_cloudiness.html">Cloudiness</a></li>
+                                        <li><a href="experimental_winds.html">Wind Speed</a></li>
+                                    </ul>
+                            </li>
+                            <li><a href="comparison.html">Comparison</a></li>
+                            <li><a href="data_experimental.html">Data</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                  </div>
+            </nav>
+            <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 align ="center">Summary: Latitude vs X</h2>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="col-md-6">
+                            <h2 align ="center"> Visualizations</h2>
+                            <p></p>
+                            <p></p>
+                        </div>
+                </div>
+                    <div class="row">
+                        <div class="col-md-7">
+    
+                            <!Put the Image Here-->
+                            <img  src = "Plots/temp_lat.png" align = "left" height="200px" width="200px" hspace="20">
+                            <!Enter Text Here to describe the information on the page-->
+                            <p>The purpose of this project was to analyze how the weather changes across various latitudes in addition to specific weather characteristics at the equator.  To accomplish this analysis, data was downloaded from the OpenWeatherMap API and organized in a data file for over 500 cities.</p>
+                            <p>After assembling the data file, and using Python and Matplotlib with the Seaborn libraries, plots were generated for various aspects of the weather vs. latitude.  Factors examined included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as descriptions of any observed trends.</p>
+                        </div>
+                        <div class="col-md-5">
+                                <a href="experimental_maxtemp.html"><img class="img-responsive" align = "left" src = "Plots/temp_lat.png"  height="200px" width="200px" ></a>
+                                <a href="experimental_humidity.html"><img class="img-responsive" align = "left" src = "Plots/humid_lat.png" height="200px" width="200px" ></a>
+                                <p></p>
+                                <a href="experimental_cloudiness.html"><img class="img-responsive" align = "left" src = "Plots/cloud_lat.png" height="200px" width="200px" ></a>
+                                <p></p>
+                                <a href="experimental_winds.html"><img class="img-responsive" align = "left"src = "Plots/winds_lat.png" height="200px" width="200px"></a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    
+        </body>
+</html>

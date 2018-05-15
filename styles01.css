@@ -1,0 +1,34 @@
+
+/* Centering our h1 tag inside our header, giving it a little padding, removing its margin */
+.header h1 {
+  padding: 60px;
+  margin: 0;
+  color: #000;
+  text-align: center;
+}
+
+/* Giving the .post element margin on 3 sides */
+/*
+.post {
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+*/
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.column4 {
+    float: left;
+    width: 25%;
+    padding: 5px;
+  }
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
